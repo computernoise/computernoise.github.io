@@ -6,6 +6,56 @@
   <meta name="description" content="Performing Code — artistic research into live coding, algorithmic composition, rhythm, and performative contemporary practices by Luis Sanz.">
   <title>Performing Code — Luis Sanz</title>
   <style>
+
+
+    @font-face {
+      font-family: "Fira Code";
+      src: url("./fonts/FiraCode-Light.ttf") format("truetype");
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Fira Code";
+      src: url("./fonts/FiraCode-Regular.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Fira Code";
+      src: url("./fonts/FiraCode-Retina.ttf") format("truetype");
+      font-weight: 450;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Fira Code";
+      src: url("./fonts/FiraCode-Medium.ttf") format("truetype");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Fira Code";
+      src: url("./fonts/FiraCode-SemiBold.ttf") format("truetype");
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Fira Code";
+      src: url("./fonts/FiraCode-Bold.ttf") format("truetype");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
     :root {
       --bg: #f5f4f0;
       --paper: #fbfaf7;
@@ -19,9 +69,14 @@
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; scroll-padding-top: 84px; }
-    body {
-      margin: 0; background: var(--bg); color: var(--ink);
-      font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+   body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Fira Code", monospace;
+      font-size: 14px;
+      line-height: 1.8;
+      font-weight: 400;
       -webkit-font-smoothing: antialiased;
     }
     a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
@@ -63,8 +118,16 @@
     .codehead { display: flex; align-items: center; justify-content: space-between; padding: 10px 15px; border-bottom: 1px solid #41423d; color: #b8b8ae; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
     .copy { border: 1px solid #66675e; background: transparent; color: inherit; padding: 5px 9px; border-radius: 2px; cursor: pointer; font: inherit; }
     .copy:hover { background: #353630; color: white; }
-    pre { margin: 0; padding: 20px; overflow-x: auto; font: 13px/1.7 "SFMono-Regular", Consolas, "Liberation Mono", monospace; tab-size: 4; }
-    code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
+    pre {
+      margin: 0;
+      padding: 20px;
+      overflow-x: auto;
+      font: 13px/1.8 "Fira Code", monospace;
+      tab-size: 4;
+    }
+    code {
+      font-family: "Fira Code", monospace;
+    }
     .inline-code { background: #e8e6df; padding: 2px 5px; font-size: .9em; }
     .note { border-left: 2px solid var(--accent); padding: 4px 0 4px 18px; color: var(--muted); margin: 24px 0; }
     .columns { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 28px; }
@@ -75,6 +138,18 @@
     .archive-date { color: var(--muted); font-size: 12px; }
     footer { padding: 34px 0 44px; font-size: 12px; color: var(--muted); }
     .footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
+
+    .support-logo {
+      margin-top: 28px;
+    }
+
+    .support-logo img {
+      display: block;
+      width: 190px;
+      max-width: 100%;
+      height: auto;
+    }
+
     @media (max-width: 700px) {
       .wrap { width: min(100% - 32px, var(--max)); }
       .topbar { align-items: flex-start; padding: 17px 0; flex-direction: column; gap: 12px; }
@@ -300,10 +375,29 @@ Pbind(
         </div>
       </div>
     </section>
+    <section class="section" id="support">
+      <div class="wrap section-grid">
+        <div class="section-label">07 / Research Support</div>
+        <div>
+          <h2>Research support</h2>
+          <p>
+            Performing Code — Live Coding in Performative Contemporary
+            Practices was supported by Pro Helvetia, the Swiss Arts Council.
+          </p>
+          <div class="support-logo">
+            <img
+              src="./images/pro-helvetia-logo.svg"
+              alt="Pro Helvetia — Swiss Arts Council"
+              loading="lazy"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="section" id="about">
       <div class="wrap section-grid">
-        <div class="section-label">07 / About</div>
+        <div class="section-label">08 / About</div>
         <div>
           <h2>Luis Sanz</h2>
           <p>
