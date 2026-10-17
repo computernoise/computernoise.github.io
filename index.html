@@ -63,8 +63,8 @@
       --muted: #6c6b65;
       --line: #d9d7cf;
       --accent: #b84b2f;
-      --code: var(--ink);
-      --code-ink: var(--bg);
+      --code: #e8e6df;
+      --code-ink: var(--ink);
       --max: 1180px;
     }
 
@@ -212,6 +212,23 @@
       text-transform: uppercase;
       color: var(--muted);
       padding-top: 8px;
+    }
+
+    #research .section-label {
+      font-size: 9px;
+    }
+
+    #research h2 {
+      font-size: clamp(20px, 1.9vw, 24px);
+    }
+
+    #research p,
+    #research .note {
+      font-size: 13px;
+    }
+
+    #research .lead {
+      font-size: 15px;
     }
 
     .support-logo {
