@@ -6,20 +6,6 @@
   <meta name="description" content="Performing Code — artistic research into live coding, algorithmic composition, rhythm, and performative contemporary practices by Luis Sanz.">
   <title>Performing Code — Luis Sanz</title>
   <style>
-    @font-face {
-      font-family: "JetBrains Mono";
-      src: url("./fonts/JetBrainsMono-VariableFont_wght.ttf") format("truetype");
-      font-style: normal;
-      font-weight: 100 800;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: "JetBrains Mono";
-      src: url("./fonts/JetBrainsMono-Italic-VariableFont_wght.ttf") format("truetype");
-      font-style: italic;
-      font-weight: 100 800;
-      font-display: swap;
-    }
     :root {
       --bg: #f5f4f0;
       --paper: #fbfaf7;
@@ -35,7 +21,7 @@
     html { scroll-behavior: smooth; scroll-padding-top: 84px; }
     body {
       margin: 0; background: var(--bg); color: var(--ink);
-      font: 16px/1.75 "JetBrains Mono", monospace;
+      font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       -webkit-font-smoothing: antialiased;
     }
     a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
@@ -77,7 +63,7 @@
     .codehead { display: flex; align-items: center; justify-content: space-between; padding: 10px 15px; border-bottom: 1px solid #41423d; color: #b8b8ae; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
     .copy { border: 1px solid #66675e; background: transparent; color: inherit; padding: 5px 9px; border-radius: 2px; cursor: pointer; font: inherit; }
     .copy:hover { background: #353630; color: white; }
-    pre { margin: 0; padding: 20px; overflow-x: auto; font: 13px/1.7 "JetBrains Mono", monospace; tab-size: 4; }
+    pre { margin: 0; padding: 20px; overflow-x: auto; font: 13px/1.7 "SFMono-Regular", Consolas, "Liberation Mono", monospace; tab-size: 4; }
     code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
     .inline-code { background: #e8e6df; padding: 2px 5px; font-size: .9em; }
     .note { border-left: 2px solid var(--accent); padding: 4px 0 4px 18px; color: var(--muted); margin: 24px 0; }
