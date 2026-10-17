@@ -63,8 +63,8 @@
       --muted: #6c6b65;
       --line: #d9d7cf;
       --accent: #b84b2f;
-      --code: #20211f;
-      --code-ink: #e9e8df;
+      --code: #f9f9f9;
+      --code-ink: #1c1c1a;
       --max: 1180px;
     }
 
@@ -220,7 +220,7 @@
 
     .support-logo img {
       display: block;
-      width: 190px;
+      width: 140px;
       max-width: 100%;
       height: auto;
     }
@@ -317,15 +317,15 @@
       align-items: center;
       justify-content: space-between;
       padding: 10px 15px;
-      border-bottom: 1px solid #41423d;
-      color: #b8b8ae;
+      border-bottom: 1px solid var(--line);
+      color: var(--muted);
       font-size: 11px;
       letter-spacing: .08em;
       text-transform: uppercase;
     }
 
     .copy {
-      border: 1px solid #66675e;
+      border: 1px solid #9a988f;
       background: transparent;
       color: inherit;
       padding: 5px 9px;
@@ -335,8 +335,8 @@
     }
 
     .copy:hover {
-      background: #353630;
-      color: white;
+      background: #e8e6df;
+      color: var(--ink);
     }
 
     pre {
