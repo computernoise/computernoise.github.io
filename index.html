@@ -8,6 +8,54 @@
     content="Performing Code — artistic research into live coding, algorithmic composition, rhythm, and performative contemporary practices by Luis Sanz.">
   <title>Performing Code — Luis Sanz</title>
   <style>
+    @font-face {
+      font-family: "Space Grotesk";
+      src: url("fonts/SpaceGrotesk[wght].ttf") format("truetype");
+      font-weight: 300 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Fira Code";
+      src: url("fonts/FiraCode-Light.ttf") format("truetype");
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Fira Code";
+      src: url("fonts/FiraCode-Regular.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Fira Code";
+      src: url("fonts/FiraCode-Medium.ttf") format("truetype");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Fira Code";
+      src: url("fonts/FiraCode-SemiBold.ttf") format("truetype");
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Fira Code";
+      src: url("fonts/FiraCode-Bold.ttf") format("truetype");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
     :root {
       --bg: #f5f4f0;
       --paper: #fbfaf7;
@@ -33,7 +81,7 @@
       margin: 0;
       background: var(--bg);
       color: var(--ink);
-      font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font: 16px/1.65 "Space Grotesk", sans-serif;
       -webkit-font-smoothing: antialiased;
     }
 
@@ -283,12 +331,14 @@
       margin: 0;
       padding: 20px;
       overflow-x: auto;
-      font: 13px/1.7 "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      font: 13px/1.7 "Fira Code", monospace;
       tab-size: 4;
     }
 
-    code {
-      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    code,
+    pre,
+    .metadata {
+      font-family: "Fira Code", monospace;
     }
 
     .inline-code {
