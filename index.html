@@ -254,10 +254,6 @@
       font-weight: 300;
     }
 
-    .entry-number {
-      font-size: 11px;
-    }
-
     p {
       margin: 0 0 18px;
       max-width: 760px;
@@ -297,6 +293,9 @@
     }
 
     .entry {
+      display: grid;
+      grid-template-columns: 52px 1fr;
+      gap: 20px;
       padding: 26px 0 36px;
       border-top: 1px solid var(--line);
     }
@@ -609,18 +608,20 @@
           </p>
 
           <article class="entry">
-            <div class="entry-head">
-              <h3><span class="entry-number">01</span> — Pattern as a changing relation</h3>
-              <span class="tag">SuperCollider / sketch</span>
-            </div>
-            <p>
-              A simple pattern provides a stable starting point. Changing the sequence, duration, or relationship
-              between pattern streams can shift the resulting rhythmic behaviour without changing the sound source.
-            </p>
-            <div class="codebox">
-              <div class="codehead"><span>SuperCollider</span><button class="copy" type="button">Copy code</button>
+            <div class="num">01</div>
+            <div>
+              <div class="entry-head">
+                <h3>Pattern as a changing relation</h3>
+                <span class="tag">SuperCollider / sketch</span>
               </div>
-              <pre><code>(
+              <p>
+                A simple pattern provides a stable starting point. Changing the sequence, duration, or relationship
+                between pattern streams can shift the resulting rhythmic behaviour without changing the sound source.
+              </p>
+              <div class="codebox">
+                <div class="codehead"><span>SuperCollider</span><button class="copy" type="button">Copy code</button>
+                </div>
+                <pre><code>(
 Pbind(
     \instrument, \default,
     \degree, Pseq([0, 2, 5, 1, 4], inf),
@@ -628,32 +629,36 @@ Pbind(
     \amp, 0.15
 ).play;
 )</code></pre>
+              </div>
+              <p class="muted">Research note: What happens to perceived pulse when the pitch sequence and duration
+                sequence have different cycle lengths?</p>
             </div>
-            <p class="muted">Research note: What happens to perceived pulse when the pitch sequence and duration
-              sequence have different cycle lengths?</p>
           </article>
 
           <article class="entry">
-            <div class="entry-head">
-              <h3><span class="entry-number">02</span> — Documenting an operator</h3>
-              <span class="tag">Template / replace with tested code</span>
-            </div>
-            <p>
-              Use this structure to document a custom operator, generator, or transformation. State the input,
-              the operation it performs, and what changed in the listening test.
-            </p>
-            <div class="codebox">
-              <div class="codehead"><span>Code example placeholder</span><button class="copy" type="button">Copy
-                  code</button></div>
-              <pre><code>// Name:
+            <div class="num">02</div>
+            <div>
+              <div class="entry-head">
+                <h3>Documenting an operator</h3>
+                <span class="tag">Template / replace with tested code</span>
+              </div>
+              <p>
+                Use this structure to document a custom operator, generator, or transformation. State the input,
+                the operation it performs, and what changed in the listening test.
+              </p>
+              <div class="codebox">
+                <div class="codehead"><span>Code example placeholder</span><button class="copy" type="button">Copy
+                    code</button></div>
+                <pre><code>// Name:
 // Input:
 // Operation:
 // Output:
 //
 // Example call:
 // [insert tested expression here]</code></pre>
+              </div>
+              <p class="muted">Keep examples executable where possible. Mark pseudocode and untested sketches clearly.</p>
             </div>
-            <p class="muted">Keep examples executable where possible. Mark pseudocode and untested sketches clearly.</p>
           </article>
 
           <div class="note">
